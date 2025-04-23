@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, User, MapPin, Phone, Mail, FileText, CheckCircle, XCircle } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, User, MapPin, Phone, Mail, FileText, CheckCircle, MessageCircle, Video, Pill, Heart, Shield, AlertCircle, Bot } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 

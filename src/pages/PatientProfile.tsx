@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, MessageCircle, Video, Pill, FileText, User, Heart, Shield, AlertCircle, Bot } from 'lucide-react';
@@ -6,40 +5,6 @@ import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
 import AIAssistant from '../components/patient/AIAssistant';
-
-interface MedicalRecord {
-  id: string;
-  date: string;
-  title: string;
-  description: string;
-  type: 'visit' | 'test' | 'procedure';
-}
-
-interface Prescription {
-  id: string;
-  name: string;
-  dosage: string;
-  frequency: string;
-  startDate: string;
-  endDate: string;
-  notes?: string;
-  active: boolean;
-}
-
-interface FamilyMember {
-  relationship: string;
-  healthConditions: string[];
-  age?: number;
-  deceased?: boolean;
-}
-
-interface VitalReading {
-  date: string;
-  type: string;
-  value: string;
-  unit: string;
-  status: 'normal' | 'elevated' | 'low';
-}
 
 // Mock patients data - in a real app, this would come from an API
 const patients = [

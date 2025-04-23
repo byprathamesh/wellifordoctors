@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import { Settings as SettingsIcon } from 'lucide-react';
 
 const Settings = () => {

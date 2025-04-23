@@ -1,5 +1,5 @@
-import React from 'react';
-import { Bell, Calendar, MessageCircle, FileText, User } from 'lucide-react';
+import React, { useState } from 'react';
+import { Bell, Calendar, Clock, MessageCircle, FileText, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface Notification {

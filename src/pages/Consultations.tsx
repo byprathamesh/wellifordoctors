@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Calendar, Clock, FileText, Search, Stethoscope, User } from "lucide-react";
+import { Calendar, Clock, Search, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";

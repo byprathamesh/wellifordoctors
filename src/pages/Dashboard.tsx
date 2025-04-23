@@ -1,5 +1,4 @@
-
-import React from 'react';
+import { useState } from 'react';
 import { Calendar, Users, FileText, Video, MessageCircle, Stethoscope, PenLine } from 'lucide-react';
 import StatsCard from '@/components/dashboard/StatsCard';
 import AppointmentCard from '@/components/dashboard/AppointmentCard';
