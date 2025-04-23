@@ -1,0 +1,97 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 112 65% 76%;
+    --primary-foreground: 112 65% 20%;
+
+    --secondary: 112 30% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 112 65% 96%;
+    --accent-foreground: 112 65% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 112 65% 76%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 112 65% 20%;
+    --sidebar-primary: 112 65% 76%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 112 30% 96%;
+    --sidebar-accent-foreground: 112 65% 20%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 112 65% 70%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .welli-card {
+    @apply rounded-xl bg-white p-5 shadow-card hover:shadow-card-hover transition-shadow duration-200;
+  }
+  
+  .stats-card {
+    @apply rounded-xl border border-welli-gray-200 p-4 bg-white;
+  }
+  
+  .action-card {
+    @apply rounded-xl flex flex-col p-4 border border-welli-gray-200 bg-gradient-to-br from-white to-welli-light-green hover:shadow-card-hover transition-all duration-200 cursor-pointer;
+  }
+  
+  .menu-link {
+    @apply flex items-center gap-3 px-4 py-2 rounded-md text-welli-gray-700 hover:bg-welli-light-green hover:text-welli-accent-green transition-colors;
+  }
+  
+  .menu-link.active {
+    @apply bg-welli-light-green text-welli-accent-green font-medium;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-green {
+    @apply bg-welli-light-green text-welli-accent-green;
+  }
+
+  .badge-gray {
+    @apply bg-welli-gray-100 text-welli-gray-700;
+  }
+
+  .badge-warning {
+    @apply bg-yellow-50 text-yellow-800;
+  }
+
+  .badge-alert {
+    @apply bg-red-50 text-red-800;
+  }
+}
