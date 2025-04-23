@@ -10,6 +10,7 @@ import Appointments from "./pages/Appointments";
 import Patients from "./pages/Patients";
 import PatientProfile from "./pages/PatientProfile";
 import AssistantVisits from "./pages/AssistantVisits";
+import AssistantVisitDetails from "./pages/AssistantVisitDetails";
 import Consultations from "./pages/Consultations";
 import Reports from "./pages/Reports";
 import Earnings from "./pages/Earnings";
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/patients" element={<MainLayout><Patients /></MainLayout>} />
           <Route path="/patients/:patientId" element={<MainLayout><PatientProfile /></MainLayout>} />
           <Route path="/assistant-visits" element={<MainLayout><AssistantVisits /></MainLayout>} />
+          <Route path="/assistant-visits/:id" element={<MainLayout><AssistantVisitDetails /></MainLayout>} />
           <Route path="/consultations" element={<MainLayout><Consultations /></MainLayout>} />
           <Route path="/reports" element={<MainLayout><Reports /></MainLayout>} />
           <Route path="/earnings" element={<MainLayout><Earnings /></MainLayout>} />
