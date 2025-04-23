@@ -8,9 +8,9 @@ module.exports = {
     extend: {
       colors: {
         'welli': {
-          'green': '#1a6b3c', // Darker green for better contrast
-          'dark-green': '#14532d', // Even darker for hover states
-          'light-green': '#f0fdf4', // Light background
+          'green': '#22c55e', // Original Welli green
+          'dark-green': '#16a34a', // Original dark green
+          'light-green': '#f0fdf4', // Original light green
           'gray': {
             50: '#f9fafb',
             100: '#f3f4f6',
