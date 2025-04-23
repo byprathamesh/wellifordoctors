@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -15,6 +14,7 @@ import Consultations from "./pages/Consultations";
 import Reports from "./pages/Reports";
 import Earnings from "./pages/Earnings";
 import Settings from "./pages/Settings";
+import Notifications from "./pages/Notifications";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +35,7 @@ const App = () => (
           <Route path="/reports" element={<MainLayout><Reports /></MainLayout>} />
           <Route path="/earnings" element={<MainLayout><Earnings /></MainLayout>} />
           <Route path="/settings" element={<MainLayout><Settings /></MainLayout>} />
+          <Route path="/notifications" element={<MainLayout><Notifications /></MainLayout>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
