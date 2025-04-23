@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { CalendarDays, Users, FileText, Video, MessageCircle, BarChart3, PiggyBank, Settings, Circle, Bot } from 'lucide-react';
+import { CalendarDays, Users, FileText, Video, MessageCircle, BarChart3, PiggyBank, Settings, Circle } from 'lucide-react';
 
 // Sidebar menu items config
 const menuItems = [
@@ -24,10 +23,9 @@ const Sidebar = () => {
         {/* Circular W logo */}
         <div className="w-12 h-12 bg-welli-green rounded-full flex items-center justify-center shadow-md">
           <img 
-            src="/lovable-uploads/0ddb435e-dc14-4505-bf20-b186835baf55.png" 
+            src="/favicon.svg" 
             alt="Welli Logo" 
-            className="object-cover w-8 h-8"
-            style={{borderRadius: '50%', background: '#fff'}}
+            className="w-8 h-8"
           />
         </div>
         {/* Brand */}
@@ -60,7 +58,11 @@ const Sidebar = () => {
             className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg bg-gradient-to-br from-welli-green to-welli-accent-green/90 hover:scale-110 transition outline-welli-green/50"
             style={{ boxShadow: '0 2px 8px 0 #d4eacb50', border: '3px solid #e2fce5' }}
           >
-            <Bot size={30} className="text-welli-gray-800" />
+            <img 
+              src="/favicon.svg" 
+              alt="AI Assistant" 
+              className="w-8 h-8"
+            />
             <span className="absolute bottom-3 right-2 block w-3 h-3 rounded-full bg-white border-2 border-welli-green flex items-center justify-center">
               <Circle className="text-welli-green" size={10} />
             </span>
