@@ -44,6 +44,7 @@ export default {
           'green': '#22c55e', // Original Welli green
           'dark-green': '#16a34a', // Original dark green
           'light-green': '#f0fdf4', // Original light green
+          'accent-green': '#10b981', // Accent green for hover states
           'gray': {
             50: '#f9fafb',
             100: '#f3f4f6',
