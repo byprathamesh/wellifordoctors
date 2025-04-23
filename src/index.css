@@ -89,11 +89,11 @@
   }
   
   .menu-link {
-    @apply flex items-center gap-3 px-4 py-2 rounded-md text-welli-gray-700 hover:bg-welli-light-green hover:text-welli-accent-green transition-colors;
+    @apply flex items-center gap-3 px-4 py-2 rounded-md text-welli-gray-700 hover:bg-welli-light-green hover:text-welli-green transition-colors;
   }
   
   .menu-link.active {
-    @apply bg-welli-light-green text-welli-accent-green font-medium;
+    @apply bg-welli-light-green text-welli-green font-medium;
   }
 
   .badge {
@@ -101,7 +101,7 @@
   }
 
   .badge-green {
-    @apply bg-welli-light-green text-welli-accent-green;
+    @apply bg-welli-light-green text-welli-green;
   }
 
   .badge-gray {
