@@ -1,4 +1,4 @@
-# WelliForDoctors
+# Welli
 
 A modern web application for doctors to manage their practice, built with React, TypeScript, and Tailwind CSS.
 
